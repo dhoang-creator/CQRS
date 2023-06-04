@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.13.1"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "AkkaTemplate"
+    name := "CQRS"
   )
 
 lazy val circeVersion = "0.14.5"
