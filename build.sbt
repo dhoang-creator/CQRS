@@ -14,6 +14,11 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka"           %% "akka-actor"                 % "2.8.2",
   "com.typesafe.akka"           %% "akka-stream"                % "2.8.2",
 
+  // Akka Persistence
+  "com.typesafe.akka"           %% "akka-persistence"           % "2.8.2",
+
+  // Akka HTTP
+  "com.typesafe.akka"           %% "akka-http"                  % "10.5.0",
 
 // Postgres DB
   "org.postgresql"              % "postgresql"                  % "42.5.4",
@@ -41,5 +46,6 @@ libraryDependencies ++= Seq(
   "org.scalatestplus"           %% "scalacheck-1-17"            % "3.2.16.0"    % Test,
   "org.scalamock"               %% "scalamock"                  % "5.2.0"       % Test,
   "org.scalatestplus.play"      %% "scalatestplus-play"         % "5.1.0"       % Test,
-  "com.typesafe.akka"           %% "akka-testkit"               % "2.8.2"       % Test
+  "com.typesafe.akka"           %% "akka-testkit"               % "2.8.2"       % Test,
+  "com.typesafe.akka"           %% "akka-persistence-testkit"   % "2.8.2"       % Test
 )
