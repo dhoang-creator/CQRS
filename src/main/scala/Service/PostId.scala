@@ -15,6 +15,7 @@ object PostId {
 
   def apply(id: UUID): PostId = new PostId(id)
 
+  // Below is the decoder and encoder to JSON of the PostId -> are we passing in the UUID and the string version of the post here?
   implicit val postIdDecoder: Decoder[PostId] =
     Decoder.decodeUUID.map(PostId(_))
   implicit val postIdEncoder: Encoder[PostId] =
